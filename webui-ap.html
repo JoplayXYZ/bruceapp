@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruce App</title>
+  <link rel="stylesheet" href="loader.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <style>
+    :root {
+      --accent: #6796B9;
+      --bg: #093762;
+    }
+    @font-face {
+      font-family: adafruit;
+      src: url(fonts/adafruit_5x7.ttf);
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent scrollbars */
+      height: 100%;
+      background-color: #093762;
+    }
+    iframe {
+      border: none;
+      width: 100vw;
+      height: 95vh;
+      display: block;
+    }
+    button {
+      border: 2px solid #e0e0e0;
+      padding: 1rem 1rem 1rem 2.5rem;
+      width: 100%;
+      text-align: left;
+      background-color: var(--bg);
+      font-family: 'adafruit', monospace, Courier, monospace;
+      font-size: 1rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <div><button onclick="location.href = 'webui.html'">Back</button></div>
+    <iframe src="">
+        <div class="loader-container">
+            <div class="loader" ></div>
+        </div>
+    </iframe>
+    <div class="loader-container">
+        <div class="loader" ></div>
+    </div>
+</body>
+</html>
