@@ -1,0 +1,81 @@
+    :root {
+      --accent: #6796B9;
+      --bg: #093762;
+    }
+    @font-face {
+      font-family: adafruit;
+      src: url(fonts/adafruit_5x7.ttf);
+    }
+    body {
+      background-color: var(--bg);
+      color: #e0e0e0;
+      font-family: 'adafruit', monospace, Courier, monospace;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container {
+      border: 1px solid #e0e0e0;
+      padding: 0rem 1rem 1rem 1rem;
+      margin-top: 50px;
+      max-width: 600px;
+      width: 90%;
+      background-color: var(--bg);
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 2.5rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #e0e0e0;
+    }
+    .links {
+        text-align: right;
+    }
+    .line {
+      width: 106%;
+      height: 2px;
+      background-color: #e0e0e0;
+      margin: 0rem -1rem 0rem -1rem; 
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #82cfff;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #5a9bd4;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888888;
+    }
+    textarea {
+      border: 1px dashed #ffffff;
+      padding: 0.5rem;
+    }
+    .title-text {
+        display: inline-block;
+        transform-origin: right right;
+    }
+    .main-body-title {
+        display: inline-block;
+    }
+    button {
+      border: 1px solid #e0e0e0;
+      padding: 1rem 1rem 1rem 2.5rem;
+      width: 100%;
+      text-align: left;
+      background-color: var(--bg);
+      font-family: 'adafruit', monospace, Courier, monospace;
+      font-size: 1rem;
+      color: white;
+      margin-top: 10px;
+    }
