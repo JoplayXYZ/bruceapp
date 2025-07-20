@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  width: 100vw;  /* Full viewport width */
+  /*height: 100px;  Full viewport height */
+  /*width: 100px;   Full viewport width */
 }
 
 .loader { 
   --uib-size: 100px;
-  --uib-color: aqua;
+  --uib-color: white;
   --uib-speed: 2s;
   position: relative;
   height: var(--uib-size);

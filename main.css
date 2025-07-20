@@ -1,6 +1,8 @@
     :root {
-      --accent: #6796B9;
-      --bg: #093762;
+      --accent-old: #6796B9;
+      --bg-old: #093762;
+      --accent: #000000;
+      --bg: #000000;
     }
     @font-face {
       font-family: adafruit;
@@ -15,6 +17,11 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+    body.fade-out {
+      opacity: 0;
     }
     .container {
       border: 1px solid #e0e0e0;
