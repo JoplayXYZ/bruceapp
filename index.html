@@ -4,20 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bruce App</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="loader.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
   <link rel="manifest" href="/favicon/site.webmanifest">
+  <style>
+    :root {
+      --accent-old: #6796B9;
+      --bg-old: #093762;
+      --accent: #000000;
+      --bg: #000000;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent scrollbars */
+      height: 100%;
+      background-color: var(--bg);
+    }
+    iframe {
+      border: none;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
+    <div class="loader-container">
+      <div class="loader" ></div>
+    </div>
 
-    <h1 class="main-body-title">Bruce App</h1>
-    <p>0.1</p>
-    <br>
-    <button onclick="location.assign('webui.html')">WebUI</button>
-  </div>
 
+    <iframe src="main.html"></iframe>
 </body>
 </html>
