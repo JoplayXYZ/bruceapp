@@ -15,10 +15,14 @@
       --accent: #000000;
       --bg: #000000;
     }
+    @font-face {
+      font-family: adafruit;
+      src: url(/fonts/adafruit_5x7.ttf);
+    }
     html, body {
       margin: 0;
       padding: 0;
-      overflow: hidden; /* Prevent scrollbars */
+      overflow-x: hidden;
       height: 100%;
       background-color: var(--bg);
     }
@@ -26,12 +30,30 @@
       border: none;
       position: absolute;
       width: 100vw;
-      height: 100vh;
+      height: 95vh;
       display: block;
+    }
+    .top-bar {
+      border: 2px solid #e0e0e0;
+      padding: 1rem 1rem 1rem 2.5rem;
+      width: 90vw;
+      text-align: left;
+      background-color: var(--bg);
+      font-family: 'adafruit', monospace, Courier;
+      font-size: 1rem;
+      color: white;
     }
   </style>
 </head>
 <body>
+    <div class="top-bar">
+      <a>Bruce App v0.2</a>
+    </div>
     <iframe src="main.html"></iframe>
 </body>
 </html>
+
+
+
+
+
